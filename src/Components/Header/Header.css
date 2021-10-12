@@ -1,0 +1,38 @@
+* {
+   --primary-color: #ededed;
+   --secondary-color: #242424;
+}
+
+.Header {
+   width: 100%;
+   height: 65px;
+   background-color: black;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.Header-nav>ul{
+   display: flex;
+   justify-content: space-between;
+}
+
+.Header-nav>ul>li{
+   padding: 0.6em;
+   color: var(--primary-color);
+}
+
+.Header-nav>ul>li>a{
+   padding: 0.6em;
+}
+
+.logo {
+   width: 60px;
+   fill: var(--primary-color);
+}
+
+@media (max-width: 480px) {
+
+
+   
+}
