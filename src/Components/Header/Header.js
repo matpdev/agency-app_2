@@ -32,32 +32,12 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="hvr-grow  ">
+              <a href="#" className="hvr-grow">
                 Contato
               </a>
             </li>
           </ul>
         </div>
-        <button className="cross">M</button>
-      </div>
-      <div className="menu">
-        <ul>
-          <a href="#">
-            <li>LINK ONE</li>
-          </a>
-          <a href="#">
-            <li>LINK TWO</li>
-          </a>
-          <a href="#">
-            <li>LINK THREE</li>
-          </a>
-          <a href="#">
-            <li>LINK FOUR</li>
-          </a>
-          <a href="#">
-            <li>LINK FIVE</li>
-          </a>
-        </ul>
       </div>
     </>
   );

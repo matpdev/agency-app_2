@@ -17,5 +17,27 @@ export const TextFile = [
             whatIDo: "Hoje trabalho como Designer, Desenvolvedor Front-End e Freelancer de artes para mídias sociais."
          },
       ]
+   },
+   {
+      myGarantees: [
+         {
+            habilities: [
+               {
+                  habilitiesHead: "Habilidades"
+               },
+               {
+                  habilitiesResume: "Habilidades garantidas, e posso demonstrar de todas as formas que preferir."
+               }
+            ],
+            peopleResume: [
+               {
+                  peopleHead: "Confiança"
+               },
+               {
+                  peopleHead: "Todas as pessoas que me encomendaram artes, gostaram muito do meu trabalho!"
+               }
+            ]
+         }
+      ]
    }
 ]
