@@ -2,6 +2,8 @@ import React from "react";
 import "./Main.css";
 import { Carousel } from "react-carousel-minimal";
 import { TextFile } from "../../Data/textFile";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBullseye, faCoffee, faDesktop, faPenNib, faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 
 const Main = () => {
   const data = [
@@ -55,64 +57,68 @@ const Main = () => {
   return (
     <div className="Main-Content">
       <div style={{ textAlign: "center" }}>
-        <div
-          style={{
-            padding: "0 10px",
-          }}
-        >
+        <div>
           <Carousel
+            className="Corousel"
             data={data}
             time={2000}
             slideNumber={false}
             width="1000px"
             height="500px"
             captionStyle={captionStyle}
-            radius="10px"
             slideNumberStyle={slideNumberStyle}
             captionPosition="bottom"
             automatic={true}
             dots={false}
-            pauseIconColor="white"
+            pauseIconColor="transparent"
             pauseIconSize="40px"
             slideBackgroundColor="darkgrey"
             slideImageFit="cover"
             thumbnails={false}
-            thumbnailWidth="100px"
             style={{
               textAlign: "center",
               maxWidth: "1000px",
               maxHeight: "500px",
-              margin: "40px auto",
+              margin: "0px auto 20px auto",
             }}
           />
         </div>
       </div>
       <div className="Main">
+        <div className="Divisor"></div>
         <div className="Certification">
           <ul className="Certification-List">
             <li>
-              <div className="Certification-circle"></div>
-              <h4>{TextFile.map((habilities) => {
-                 
-              })}</h4>
-              <h6>Eae</h6>
+              <div className="Certification-circle">
+              <FontAwesomeIcon icon={faBullseye} className="icon" />
+              {/* <i class="fas fa-bullseye"></i> */}
+              </div>
+              <h3><strong>Habilidades</strong></h3>
+              <h5>Habilidades garantidas, para transformar a sua ideia em <strong>arte!</strong></h5>
             </li>
             <li>
-              <div className="Certification-circle"></div>
-              <h4>Eae</h4>
-              <h6>Eae</h6>
+              <div className="Certification-circle">
+              <FontAwesomeIcon icon={faThumbsUp} className="icon" />
+              </div>
+              <h3><strong>Confiança</strong></h3>
+              <h5>Estamos aqui para garantir que nossas artes, te façam garantir mais clientes para o seu <strong>negócio!</strong></h5>
             </li>
             <li>
-              <div className="Certification-circle"></div>
-              <h4>Eae</h4>
-              <h6>Eae</h6>
+              <div className="Certification-circle">
+              <FontAwesomeIcon icon={faDesktop} className="icon" />
+              </div>
+              <h3><strong>Habilidades</strong></h3>
+              <h5>Habilidades garantidas, para transformar a sua ideia em <strong>arte!</strong></h5>
             </li>
             <li>
-              <div className="Certification-circle"></div>
-              <h4>Eae</h4>
-              <h6>Eae</h6>
+              <div className="Certification-circle">
+              <FontAwesomeIcon icon={faPenNib} className="icon" />
+              </div>
+              <h3><strong>Habilidades</strong></h3>
+              <h5>Habilidades garantidas, para transformar a sua ideia em <strong>arte!</strong></h5>
             </li>
           </ul>
+          <div className="Divisor"></div>
         </div>
       </div>
     </div>

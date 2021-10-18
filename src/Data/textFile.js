@@ -34,7 +34,7 @@ export const TextFile = [
                   peopleHead: "Confiança"
                },
                {
-                  peopleHead: "Todas as pessoas que me encomendaram artes, gostaram muito do meu trabalho!"
+                  peopleHead: "Estamos aqui para garantir que nossas artes, te façam garantir mais clientes para o seu negócio!"
                }
             ]
          }
