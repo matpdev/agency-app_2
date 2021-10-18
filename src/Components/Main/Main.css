@@ -1,13 +1,32 @@
+* {
+   --primary-color: #ededed;
+   --secondary-color: #242424;
+}
+
+h5, h3{
+   font-weight: 500;
+}
+
+strong{
+   font-weight: 900;
+}
+
 .Main-Content {
    width: 100%;
    height: 100%;
    margin: auto;
 }
 
+.Divisor{
+   width: 100%;
+   border-bottom: 1px solid black;
+   margin: 20px 0px;
+}
+
 .Main {
    width: 70%;
    height: 300px;
-   border: 1px solid red;
+   /* border: 1px solid red; */
    margin: auto;
 }
 
@@ -24,16 +43,28 @@
 }
 
 .Certification-circle {
-   background-color: black;
    width: 100px;
    height: 100px;
    border-radius: 50%;
+   background-color: var(--primary-color);
+   border: 3px solid var(--secondary-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-.Certification-List>li>h4{
+.icon{
+   font-size: 50px;
+}
+
+.Certification-List>li>h3{
    padding-top: 5px;
 }
 
+.Certification-List>li>h5{
+   text-align: center;
+   width: 200px;
+}
 
 @media (max-width: 480px) {
    .Certification-List {
@@ -47,5 +78,9 @@
    .Certification-circle{
       width: 200px;
       height: 200px;
+   }
+
+   .icon{
+      font-size: 90px;
    }
 }
