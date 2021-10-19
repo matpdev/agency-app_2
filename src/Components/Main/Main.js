@@ -1,6 +1,7 @@
 import React from "react";
 import "./Main.css";
 import Prices from "../Prices/Prices";
+import GalleryP from "../Gallery/Gallery";
 import { Carousel } from "react-carousel-minimal";
 import { TextFile } from "../../Data/textFile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -52,16 +53,6 @@ const Main = () => {
         "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/summer-7.jpg",
     },
   ];
-
-  const captionStyle = {
-    fontSize: "2em",
-    fontWeight: "bold",
-  };
-  const slideNumberStyle = {
-    fontSize: "20px",
-    fontWeight: "bold",
-  };
-
   return (
     <div className="Main-Content">
       <div style={{ textAlign: "center" }}>
@@ -73,8 +64,6 @@ const Main = () => {
             slideNumber={false}
             width="1000px"
             height="500px"
-            captionStyle={captionStyle}
-            slideNumberStyle={slideNumberStyle}
             captionPosition="bottom"
             automatic={true}
             dots={false}
@@ -156,6 +145,7 @@ const Main = () => {
           </div>
           <div className="Divisor"></div>
           <Prices></Prices>
+          <GalleryP></GalleryP>
         </div>
       </div>
     </div>
