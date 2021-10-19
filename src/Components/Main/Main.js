@@ -145,6 +145,7 @@ const Main = () => {
           </div>
           <div className="Divisor"></div>
           <Prices></Prices>
+          <div className="Divisor"></div>
           <GalleryP></GalleryP>
         </div>
       </div>

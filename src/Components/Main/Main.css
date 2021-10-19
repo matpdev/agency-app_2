@@ -19,7 +19,7 @@ strong{
 
 .Divisor{
    width: 100%;
-   border-bottom: 1px solid black;
+   border-bottom: 1px solid var(--secondary-color);
    margin: 20px 0px;
 }
 
