@@ -98,6 +98,7 @@ const Main = () => {
           <ul className="Certification-List">
             <li>
               <div className="Certification-circle">
+              <FontAwesomeIcon icon={faBullseye} className="icon" />
               </div>
               <h3>
                 <strong>Habilidades</strong>
