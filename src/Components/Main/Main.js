@@ -1,9 +1,17 @@
 import React from "react";
 import "./Main.css";
+import Prices from "../Prices/Prices";
 import { Carousel } from "react-carousel-minimal";
 import { TextFile } from "../../Data/textFile";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBullseye, faCoffee, faDesktop, faPenNib, faThumbsUp } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBullseye,
+  faCoffee,
+  faDesktop,
+  faPenNib,
+  faThumbsUp,
+} from "@fortawesome/free-solid-svg-icons";
+
 
 const Main = () => {
   const data = [
@@ -90,35 +98,63 @@ const Main = () => {
           <ul className="Certification-List">
             <li>
               <div className="Certification-circle">
-              <FontAwesomeIcon icon={faBullseye} className="icon" />
-              {/* <i class="fas fa-bullseye"></i> */}
               </div>
-              <h3><strong>Habilidades</strong></h3>
-              <h5>Habilidades garantidas, para transformar a sua ideia em <strong>arte!</strong></h5>
+              <h3>
+                <strong>Habilidades</strong>
+              </h3>
+              <h5>
+                Habilidades garantidas, para transformar a sua ideia em{" "}
+                <strong>arte!</strong>
+              </h5>
             </li>
             <li>
               <div className="Certification-circle">
-              <FontAwesomeIcon icon={faThumbsUp} className="icon" />
+                <FontAwesomeIcon icon={faThumbsUp} className="icon" />
               </div>
-              <h3><strong>Confiança</strong></h3>
-              <h5>Estamos aqui para garantir que nossas artes, te façam garantir mais clientes para o seu <strong>negócio!</strong></h5>
+              <h3>
+                <strong>Confiança</strong>
+              </h3>
+              <h5>
+                Estamos aqui para garantir que nossas artes, te façam garantir
+                mais clientes para o seu <strong>negócio!</strong>
+              </h5>
             </li>
             <li>
               <div className="Certification-circle">
-              <FontAwesomeIcon icon={faDesktop} className="icon" />
+                <FontAwesomeIcon icon={faDesktop} className="icon" />
               </div>
-              <h3><strong>Habilidades</strong></h3>
-              <h5>Habilidades garantidas, para transformar a sua ideia em <strong>arte!</strong></h5>
+              <h3>
+                <strong>Habilidades</strong>
+              </h3>
+              <h5>
+                Habilidades garantidas, para transformar a sua ideia em{" "}
+                <strong>arte!</strong>
+              </h5>
             </li>
             <li>
               <div className="Certification-circle">
-              <FontAwesomeIcon icon={faPenNib} className="icon" />
+                <FontAwesomeIcon icon={faPenNib} className="icon" />
               </div>
-              <h3><strong>Habilidades</strong></h3>
-              <h5>Habilidades garantidas, para transformar a sua ideia em <strong>arte!</strong></h5>
+              <h3>
+                <strong>Habilidades</strong>
+              </h3>
+              <h5>
+                Habilidades garantidas, para transformar a sua ideia em{" "}
+                <strong>arte!</strong>
+              </h5>
             </li>
           </ul>
+          <div className="Certification-text">
+            <h2>Mussim Ipsum</h2>
+            <h4>
+              Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé,
+              boa gentis num é.
+              <br /> Sapien in monti palavris qui num significa nadis i pareci
+              latim.
+            </h4>
+          </div>
           <div className="Divisor"></div>
+          <Prices></Prices>
         </div>
       </div>
     </div>
