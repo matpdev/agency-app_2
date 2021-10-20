@@ -12,7 +12,7 @@ import {
   faPenNib,
   faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
-
+import Example from "../TextScramble/TextScramble";
 
 const Main = () => {
   const data = [
@@ -62,7 +62,7 @@ const Main = () => {
             data={data}
             time={2000}
             slideNumber={false}
-            width="1000px"
+            width="100%"
             height="500px"
             captionPosition="bottom"
             automatic={true}
@@ -74,7 +74,7 @@ const Main = () => {
             thumbnails={false}
             style={{
               textAlign: "center",
-              maxWidth: "1000px",
+              maxWidth: "100%",
               maxHeight: "500px",
               margin: "0px auto 20px auto",
             }}

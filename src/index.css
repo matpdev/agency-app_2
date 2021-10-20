@@ -10,7 +10,7 @@
   --secondary-color: #242424;
 }
 
-a:active,a:link{
+a:link{
   color: var(--primary-color);
 }
 
