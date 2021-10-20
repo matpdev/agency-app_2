@@ -2,6 +2,7 @@ import React from "react";
 import "./Main.css";
 import Prices from "../Prices/Prices";
 import GalleryP from "../Gallery/Gallery";
+import Logo from "../../Data/logo";
 import { Carousel } from "react-carousel-minimal";
 import { TextFile } from "../../Data/textFile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -87,7 +88,7 @@ const Main = () => {
           <ul className="Certification-List">
             <li>
               <div className="Certification-circle">
-              <FontAwesomeIcon icon={faBullseye} className="icon" />
+                <FontAwesomeIcon icon={faBullseye} className="icon" />
               </div>
               <h3>
                 <strong>Habilidades</strong>
@@ -146,7 +147,87 @@ const Main = () => {
           <div className="Divisor"></div>
           <Prices></Prices>
           <div className="Divisor"></div>
+        </div>
+        <div>
           <GalleryP></GalleryP>
+        </div>
+      </div>
+      <div className="TextScramble">
+        <div className="Footer">
+          <div className="Footer-Text">
+            <Logo></Logo>
+            <p>
+            Nós criamos artes, ideias, para mostrar <br/> ao mundo <strong>a sua marca!</strong>
+            </p>
+          </div>
+          <div className="Footer-Text">
+            <h2>
+              Explore
+            </h2>
+            <a href="#">
+              Home
+            </a>
+            <a href="#">
+              Portifólio
+            </a>
+            <a href="#">
+              Biografia
+            </a>
+            <a href="#">
+              Contato
+            </a>
+          </div>
+          <div className="Footer-Text">
+          <h2>
+              Explore
+            </h2>
+            <a href="#">
+              Home
+            </a>
+            <a href="#">
+              Portifólio
+            </a>
+            <a href="#">
+              Biografia
+            </a>
+            <a href="#">
+              Contato
+            </a>
+          </div>
+          <div className="Footer-Text">
+          <h2>
+              Explore
+            </h2>
+            <a href="#">
+              Home
+            </a>
+            <a href="#">
+              Portifólio
+            </a>
+            <a href="#">
+              Biografia
+            </a>
+            <a href="#">
+              Contato
+            </a>
+          </div>
+          <div className="Footer-Text">
+          <h2>
+              Explore
+            </h2>
+            <a href="#">
+              Home
+            </a>
+            <a href="#">
+              Portifólio
+            </a>
+            <a href="#">
+              Biografia
+            </a>
+            <a href="#">
+              Contato
+            </a>
+          </div>
         </div>
       </div>
     </div>
