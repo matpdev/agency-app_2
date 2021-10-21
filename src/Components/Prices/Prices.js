@@ -42,14 +42,14 @@ const Prices = () => {
           <h3>
             <sup>R$</sup>560<span class="small">,00/mês</span>
           </h3>
-          <p>75,000 monthly visits</p>
+          <p>Social Media</p>
           <ul>
           <li>Posts com <strong>100%</strong> de Garantia</li>
             <li>Com Limite de <strong>5 Postagem</strong> por Semana</li>
             <li>Ao seu <strong>gosto</strong>, só sendo postado após sua aprovação</li>
           </ul>
           <a href="" class="button">
-            Vamos
+            Vamos?
           </a>
         </div>
       </div>

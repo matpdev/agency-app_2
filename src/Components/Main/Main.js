@@ -3,123 +3,77 @@ import "./Main.css";
 import Prices from "../Prices/Prices";
 import GalleryP from "../Gallery/Gallery";
 import Logo from "../../Data/logo";
-import { Carousel } from "react-carousel-minimal";
 import { TextFile } from "../../Data/textFile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faBullhorn,
   faBullseye,
   faCoffee,
   faDesktop,
   faPenNib,
+  faPoll,
   faThumbsUp,
+  faUser,
+  faUserFriends,
 } from "@fortawesome/free-solid-svg-icons";
 import Example from "../TextScramble/TextScramble";
+import Carroulsel from "../Carroulsel/Carroulsel";
 
 const Main = () => {
-  const data = [
-    {
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/1200px-GoldenGateBridge-001.jpg",
-    },
-    {
-      image:
-        "https://cdn.britannica.com/s:800x450,c:crop/35/204435-138-2F2B745A/Time-lapse-hyper-lapse-Isle-Skye-Scotland.jpg",
-    },
-    {
-      image:
-        "https://static2.tripoto.com/media/filter/tst/img/735873/TripDocument/1537686560_1537686557954.jpg",
-    },
-    {
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Palace_of_Fine_Arts_%2816794p%29.jpg/1200px-Palace_of_Fine_Arts_%2816794p%29.jpg",
-    },
-    {
-      image:
-        "https://i.natgeofe.com/n/f7732389-a045-402c-bf39-cb4eda39e786/scotland_travel_4x3.jpg",
-    },
-    {
-      image:
-        "https://www.tusktravel.com/blog/wp-content/uploads/2020/07/Best-Time-to-Visit-Darjeeling-for-Honeymoon.jpg",
-    },
-    {
-      image:
-        "https://www.omm.com/~/media/images/site/locations/san_francisco_780x520px.ashx",
-    },
-    {
-      image:
-        "https://images.ctfassets.net/bth3mlrehms2/6Ypj2Qd3m3jQk6ygmpsNAM/61d2f8cb9f939beed918971b9bc59bcd/Scotland.jpg?w=750&h=422&fl=progressive&q=50&fm=jpg",
-    },
-    {
-      image:
-        "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/summer-7.jpg",
-    },
-  ];
   return (
     <div className="Main-Content">
-      <div style={{ textAlign: "center" }}>
-        <div>
-          <Carousel
-            className="Corousel"
-            data={data}
-            time={2000}
-            slideNumber={false}
-            width="100%"
-            height="500px"
-            captionPosition="bottom"
-            automatic={true}
-            dots={false}
-            pauseIconColor="transparent"
-            pauseIconSize="40px"
-            slideBackgroundColor="darkgrey"
-            slideImageFit="cover"
-            thumbnails={false}
-            style={{
-              textAlign: "center",
-              maxWidth: "100%",
-              maxHeight: "500px",
-              margin: "0px auto 20px auto",
-            }}
-          />
-        </div>
-      </div>
+      <Carroulsel />
       <div className="Main">
         <div className="Divisor"></div>
         <div className="Certification">
+          <div className="Certification-text">
+            <h2>
+              A imagem da sua empresa é tudo, você decide como ela <br />
+              deve ser vista, nós mostramos como
+            </h2>
+            <h4>
+              Ajudamos nossos clientes a construírem marcas fortes e desejadas
+              no mercado através <br />
+              de nossos serviços de Gestão da Marca / Branding, Marketing
+              Digital, <br />
+              Criação de Conteúdo, Criação de Sites, Consultoria em SEO e Redes
+              Sociais.
+            </h4>
+          </div>
           <ul className="Certification-List">
             <li>
               <div className="Certification-circle">
-                <FontAwesomeIcon icon={faBullseye} className="icon" />
+                <FontAwesomeIcon icon={faUserFriends} className="icon" />
               </div>
               <h3>
-                <strong>Habilidades</strong>
+                <strong>Redes Sociais</strong>
               </h3>
               <h5>
-                Habilidades garantidas, para transformar a sua ideia em{" "}
-                <strong>arte!</strong>
+              Mais do que apenas gerenciamento, trabalhamos com o principal objetivo: {" "}
+                <strong>Gerar resultado e reconhecimento para a sua empresa.</strong>
               </h5>
             </li>
             <li>
               <div className="Certification-circle">
-                <FontAwesomeIcon icon={faThumbsUp} className="icon" />
+                <FontAwesomeIcon icon={faBullhorn} className="icon" />
               </div>
               <h3>
-                <strong>Confiança</strong>
+                <strong>Marketing</strong>
               </h3>
               <h5>
-                Estamos aqui para garantir que nossas artes, te façam garantir
-                mais clientes para o seu <strong>negócio!</strong>
+              Solucionamos seus desafios e aceleramos seu negócio através de estratégias de Marketing Digital criadas para <strong>converter seus clientes.</strong>
               </h5>
             </li>
             <li>
               <div className="Certification-circle">
-                <FontAwesomeIcon icon={faDesktop} className="icon" />
+                <FontAwesomeIcon icon={faPoll} className="icon" />
               </div>
               <h3>
-                <strong>Habilidades</strong>
+                <strong>Gestão de Tráfego</strong>
               </h3>
               <h5>
-                Habilidades garantidas, para transformar a sua ideia em{" "}
-                <strong>arte!</strong>
+              Precisa divulgar sua marca e alcançar resultados em um curto período? {" "}
+                <strong>Conheça nossas soluções em Links Patrocinados com o Google Ads.</strong>
               </h5>
             </li>
             <li>
@@ -127,23 +81,15 @@ const Main = () => {
                 <FontAwesomeIcon icon={faPenNib} className="icon" />
               </div>
               <h3>
-                <strong>Habilidades</strong>
+                <strong>Design Gráfico</strong>
               </h3>
               <h5>
-                Habilidades garantidas, para transformar a sua ideia em{" "}
-                <strong>arte!</strong>
+              Trabalhamos com todo o posicionamento da sua marca, desde a criação de um nome até a comunicação que ela deseja{" "}
+                <strong>passar ao público.</strong>
               </h5>
             </li>
           </ul>
-          <div className="Certification-text">
-            <h2>Mussim Ipsum</h2>
-            <h4>
-              Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé,
-              boa gentis num é.
-              <br /> Sapien in monti palavris qui num significa nadis i pareci
-              latim.
-            </h4>
-          </div>
+
           <div className="Divisor"></div>
           <Prices></Prices>
           <div className="Divisor"></div>
@@ -155,78 +101,44 @@ const Main = () => {
       <div className="TextScramble">
         <div className="Footer">
           <div className="Footer-Text">
-            <Logo></Logo>
+            <div>
+              <svg
+                className="Logo-Footer"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 770.34 522.05"
+              >
+                <polygon points="552.47 300.62 770.34 522.05 566.36 0 385.17 432.48 203.98 0 0 522.05 217.87 300.62 137.79 366.24 71.95 421.65 204.97 81.23 385.12 511.23 565.38 81.23 698.39 421.65 632.55 366.24 552.47 300.62" />
+              </svg>
+            </div>
             <p>
-            Nós criamos artes, ideias, para mostrar <br/> ao mundo <strong>a sua marca!</strong>
+              Nós criamos artes, ideias, para mostrar <br /> ao mundo{" "}
+              <strong>a sua marca!</strong>
             </p>
           </div>
           <div className="Footer-Text">
-            <h2>
-              Explore
-            </h2>
-            <a href="#">
-              Home
-            </a>
-            <a href="#">
-              Portifólio
-            </a>
-            <a href="#">
-              Biografia
-            </a>
-            <a href="#">
-              Contato
-            </a>
+            <h2>Explore</h2>
+            <a href="#">Home</a>
+            <a href="#">Portifólio</a>
+            <a href="#">Biografia</a>
+            <a href="#">Contato</a>
           </div>
           <div className="Footer-Text">
-          <h2>
-              Explore
-            </h2>
-            <a href="#">
-              Home
-            </a>
-            <a href="#">
-              Portifólio
-            </a>
-            <a href="#">
-              Biografia
-            </a>
-            <a href="#">
-              Contato
-            </a>
+            <h2>Contato</h2>
+            <a href="#">(84) 99463-3769</a>
+            <a href="#">matheus2ep@gmail.com</a>
+            <a href="#">matheusp.design@gmail.com</a>
           </div>
           <div className="Footer-Text">
-          <h2>
-              Explore
-            </h2>
-            <a href="#">
-              Home
-            </a>
-            <a href="#">
-              Portifólio
-            </a>
-            <a href="#">
-              Biografia
-            </a>
-            <a href="#">
-              Contato
-            </a>
+            <h2>Redes Sociais</h2>
+            <a href="#">Email</a>
+            <a href="#">Instagram</a>
+            <a href="#">Whastapp</a>
           </div>
+          <div className="Divisor-V"></div>
           <div className="Footer-Text">
-          <h2>
-              Explore
-            </h2>
-            <a href="#">
-              Home
-            </a>
-            <a href="#">
-              Portifólio
-            </a>
-            <a href="#">
-              Biografia
-            </a>
-            <a href="#">
-              Contato
-            </a>
+            <h2>Termos</h2>
+            <a href="#">Uso</a>
+            <a href="#">Condições</a>
           </div>
         </div>
       </div>
