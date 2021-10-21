@@ -3,7 +3,7 @@
    --secondary-color: #242424;
 }
 
-*:active, *:link, *:visited{
+*:link, *:visited{
    color: var(--primary-color);
 }
 
